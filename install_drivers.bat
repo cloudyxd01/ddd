@@ -25,23 +25,6 @@ del "%temp%\getadmin.vbs"
 exit /B
 
 :gotAdmin
-
-RD /S /Q %temp%
-MKDIR %temp%
-takeown /f "%temp%" /r /d y
-takeown /f "C:\Windows\Temp" /r /d y
-RD /S /Q C:\Windows\Temp
-MKDIR C:\Windows\Temp
-takeown /f "C:\Windows\Temp" /r /d y
-takeown /f %temp% /r /d y
-
-net stop wuauserv
-net stop UsoSvc
-rd /s /q C:\Windows\SoftwareDistribution
-md C:\Windows\SoftwareDistribution
-
-del *.log /a /s /q /f
-
 pushd "%CD%"
 CD /D "%~dp0"
 
