@@ -1,6 +1,5 @@
 @echo off
 @shift /0
-color 4
 
 taskkill /f /im epicgameslauncher.exe
 taskkill /f /im FortniteClient-Win64-Shipping_EAC.exe
