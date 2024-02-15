@@ -1,6 +1,5 @@
 @echo off
 @shift /0
-title Cleaner
 color 4
 
 taskkill /f /im epicgameslauncher.exe
