@@ -11,4 +11,3 @@ echo 100%
 netstat -e
 echo Successfully : Press Any Key To Continue)
 set/p z=
-pause>NUL
