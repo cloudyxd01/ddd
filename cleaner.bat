@@ -771,9 +771,6 @@ netsh advfirewall reset
 netsh int ipv6 reset
 netsh winsock reset
 netsh int ip reset
-ipconfig /release
-ipconfig /renew
-ipconfig /flushdns
 
 rd /q /s %systemdrive%\$Recycle.Bin
 rd /q /s d:\$Recycle.Bin
