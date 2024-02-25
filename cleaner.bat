@@ -765,18 +765,10 @@ rmdir /s /q "@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Loc
 @del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\Windows\Safety\edge\remote\*.*" >nul 2>&1
 @del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\Settings\settings.dat.LOG1\*.*" >nul 2>&1
 
-
-
-netsh advfirewall reset
-netsh int ipv6 reset
-netsh winsock reset
-netsh int ip reset
-
 rd /q /s %systemdrive%\$Recycle.Bin
 rd /q /s d:\$Recycle.Bin
 rd /q /s e:\$Recycle.Bin
 rd /q /s f:\$Recycle.Bin
-
 
 rmdir /s /q "%systemdrive%\Users\%username%\AppData\Local\Temp"
 del /f /s /q "%systemdrive%\Users\%username%\AppData\Local\Temp\*.*
