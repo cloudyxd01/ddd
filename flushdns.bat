@@ -1,13 +1,19 @@
 @echo off
-set/p a=To Apply Click Enter To Continue)
-echo You have chosen the mode %a%
+NETSH WINSOCK RESET
 echo Building configuration... Please wait...
-ipconfig /release
+NETSH INT IP RESET
 echo Building configuration... Please wait...
-ipconfig /renew
+NETSH INTERFACE IPV4 RESET
 echo Building configuration... Please wait...
-ipconfig /flushdns
+NETSH INTERFACE IPV6 RESET
+echo Building configuration... Please wait...
+NETSH INTERFACE TCP RESET
+echo Building configuration... Please wait...
+IPCONFIG /RELEASE
+echo Building configuration... Please wait...
+IPCONFIG /RENEW
+echo Building configuration... Please wait...
+IPCONFIG /FLUSHDNS
 echo 100% 
 netstat -e
 echo Successfully : Press Any Key To Continue)
-set/p z=
