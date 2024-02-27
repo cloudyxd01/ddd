@@ -1,6 +1,6 @@
 @echo off
 cd %~dp0
-AMIDEWINx64.EXE /SU /auto
+AMIDEWINx64.EXE /SU AUTO
 AMIDEWINx64.EXE /SS "%random%%random%"-"%random%%random%"
 AMIDEWINx64.EXE /SV "%random%%random%"-"%random%%random%"
 AMIDEWINx64.EXE /CSK "%random%%random%"-"%random%%random%"
