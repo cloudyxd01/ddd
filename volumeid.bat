@@ -1,3 +1,4 @@
+
 echo off
 cd %~dp0
 Volumeid64.exe C: "1559-%random%"
