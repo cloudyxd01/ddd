@@ -1,33 +1,33 @@
+
 @echo off
 cd %~dp0
 AMIDEWINx64.EXE /SU AUTO
-AMIDEWINx64.EXE /SS "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /SV "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CSK "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CM  "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /SP "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /SM "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /SK "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /SF "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /BM "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /BP "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /BV "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /BT "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /BLC "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /PSN "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /PAT "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /PPN "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CSK "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CS "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CV "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CM "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CA "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CO "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /CT "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /IV "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /IVN "%random%%random%"-"%random%%random%"
-AMIDEWINx64.EXE /BS "%random%%random%"-"%random%%random%"
-cls
+AMIDEWINx64.EXE /SS "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /SV "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CSK "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CM  "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /SP "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /SM "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /SK "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /SF "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /BM "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /BP "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /BV "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /BT "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /BLC "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /PSN "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /PAT "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /PPN "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CSK "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CS "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CV "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CM "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CA "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CO "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /CT "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /IV "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /IVN "1559%random%"-"%random%%random%"
+AMIDEWINx64.EXE /BS "1559%random%"-"%random%%random%"
 net stop winmgmt /y
 net start winmgmt /y
 sc stop winmgmt
@@ -35,4 +35,3 @@ timeout 1
 sc start winmgmt
 timeout 1
 echo Successfully Spoofed. Press any key to return to the main menu...
-
