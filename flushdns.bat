@@ -1,3 +1,4 @@
+
 @echo off
 echo Building configuration... Please wait...
 NETSH WINSOCK RESET
