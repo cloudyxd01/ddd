@@ -1,21 +1,20 @@
 
 @echo off
-echo Building configuration... Please wait...
-NETSH WINSOCK RESET
-echo Building configuration... Please wait...
-NETSH INT IP RESET
-echo Building configuration... Please wait...
-NETSH INTERFACE IPV4 RESET
-echo Building configuration... Please wait...
-NETSH INTERFACE IPV6 RESET
-echo Building configuration... Please wait...
-NETSH INTERFACE TCP RESET
-echo Building configuration... Please wait...
-IPCONFIG /RELEASE
-echo Building configuration... Please wait...
-IPCONFIG /RENEW
-echo Building configuration... Please wait...
-IPCONFIG /FLUSHDNS
+netsh int ip set address "%%j" dhcp 
+netsh int ip set dns "%%j" dhcp 
+netsh interface set interface name="%%j" admin=enabled 
+certutil -URLCache * delete 
+netsh int ip reset 
+netsh int ipv4 reset 
+netsh int ipv6 reset 
+ipconfig / >nul
+ipconfig /release >nul
+ipconfig /renew >nul
+ipconfig /flushdns >nul
+netsh advfirewall reset
+netsh winsock reset
+netsh int ip reset
 echo 100% 
 netstat -e
+timeout 1
 echo Successfully : Press Any Key To Continue)
